@@ -1,12 +1,54 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Home"
+    url: /
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Category"
     url: /categories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Tags"
+    url: /tags/
+
+docs:
+  - title: Server
+    children:
+      - title: "Java"
+        url: /categories/Java/
+        category: "Java"
+      - title: "Kotlin"
+        url: /categories/Kotlin/
+        category: "Kotlin"
+      - title: "SpringBoot"
+        url: /categories/SpringBoot/
+        category: "SpringBoot"
+      - title: "Network"
+        url: /categories/Network/
+        category: "Network"
+  - title: Client
+    children:
+      - title: "JavaScript"
+        url: /categories/JavaScript/
+        category: "JavaScript"
+      - title: "TypeScript"
+        url: /categories/TypeScript/
+        category: "TypeScript"
+      - title: "React"
+        url: /categories/React/
+        category: "React"
+      - title: "Unity"
+        url: /categories/Unity/
+        category: "Unity"
+  - title: Etc
+    children:
+      - title: "Git"
+        url: /categories/Git/
+        category: "Git"
+      - title: "Algorithm"
+        url: /categories/Algorithm/
+        category: "Algorithm"
+      - title: "Book"
+        url: /categories/Book/
+        category: "Book"
+      - title: "etc"
+        url: /categories/Etc/
+        category: "Etc"
