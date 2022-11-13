@@ -13,42 +13,42 @@ docs:
   - title: Server
     children:
       - title: "Java"
-        url: /categories/Java/
+        url: /categories/java/
         category: "Java"
       - title: "Kotlin"
-        url: /categories/Kotlin/
+        url: /categories/kotlin/
         category: "Kotlin"
       - title: "SpringBoot"
-        url: /categories/SpringBoot/
+        url: /categories/springboot/
         category: "SpringBoot"
       - title: "Network"
-        url: /categories/Network/
+        url: /categories/network/
         category: "Network"
   - title: Client
     children:
       - title: "JavaScript"
-        url: /categories/JavaScript/
+        url: /categories/javascript/
         category: "JavaScript"
       - title: "TypeScript"
-        url: /categories/TypeScript/
+        url: /categories/typescript/
         category: "TypeScript"
       - title: "React"
-        url: /categories/React/
+        url: /categories/react/
         category: "React"
       - title: "Unity"
-        url: /categories/Unity/
+        url: /categories/unity/
         category: "Unity"
   - title: Etc
     children:
       - title: "Git"
-        url: /categories/Git/
+        url: /categories/git/
         category: "Git"
       - title: "Algorithm"
-        url: /categories/Algorithm/
+        url: /categories/algorithm/
         category: "Algorithm"
       - title: "Book"
-        url: /categories/Book/
+        url: /categories/book/
         category: "Book"
       - title: "etc"
-        url: /categories/Etc/
+        url: /categories/etc/
         category: "Etc"
