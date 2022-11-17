@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Jeong Jiun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "맨날 까먹어서 만든 블로그"
+  location         : "Earth"
   email            :
   links:
     - label: "Email"
