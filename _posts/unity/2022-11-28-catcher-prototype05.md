@@ -209,22 +209,15 @@ MainScene으로 가서 게임을 실행하면 씬 변경에는 문제가 없다.
 
 <span style="font-size:13pt">
 처음에 문제없이 잘 왔다갔다 이동이 되는데 메인 씬으로 돌아오고 나서 마우스 클릭 위치와 상관없이 왼쪽으로만 이동하는 버그가 있어서 수정했다.<br/>
-너비 취득에 문제가 있는 듯 하여 MainCharacter 스크립트의 void Start() 안에 scWidth = Screen.width / 2;를 추가하여 처음 시작할때 화면 너비를 취득하도록 변경하였다.<br/>
+너비 취득에 문제가 있는 듯 하여 <span style="font-size:15pt; font-weight: bold;">MainCharacter</span> 스크립트의 void Start() 안에 scWidth = Screen.width / 2;를 추가하여 처음 시작할때 화면 너비를 취득하도록 변경하였다.<br/>
 </span>
 
 ```c#
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class Retry : MonoBehaviour
-{
-    public void DoRetry()
+void Start()
     {
-        SceneManager.LoadScene("MainScene");
+        rigidbody2D = GetComponent<Rigidbody2D>();
+        scWidth = Screen.width / 2; // 추가 코드
     }
-}
 
 ```
 
