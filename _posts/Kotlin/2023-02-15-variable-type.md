@@ -20,12 +20,12 @@ last_modified_at: 2023-02-16
 |Byte|8bits|var a: Byte = 1|정수형|
 |Short|16bits|var b: Short = 1|정수형|
 |Int|32bits|var c: Int = 1|정수형|
-|Long|bits|var d: Long = 1L|정수형|
+|Long|64bits|var d: Long = 1L|정수형|
 |Float|32bits|var e: Float = 1.0f|실수형|
 |Double|64bits|var f: Double = 1.0|실수형|
 |Char|16bits|var g: Char = 'a'|문자형(UTF-16 BE)|
-|Boolean|bits|var h: Boolean = ture / false|논리형|
-|String|bits|var h: String = "String" 혹은 """이렇게 여러줄을 작성"""|문자열(기본자료형은 아니지만 작성)|
+|Boolean|4bits|var h: Boolean = ture / false|논리형|
+|String|nbits|var h: String = "String" 혹은 """이렇게 여러줄을 작성"""|문자열(기본자료형은 아니지만 작성)|
 
 <span style="font-size:13pt">
 정수형으로 진수를 표기할때에는 10진수는 그냥 숫자를 작성. <br/>
