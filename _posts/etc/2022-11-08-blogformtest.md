@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
   nav: "docs"
 categories: 
-  - etc
+  - other
 tags:
   - MarkDown
 toc: true

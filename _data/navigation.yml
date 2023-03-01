@@ -49,6 +49,6 @@ docs:
       - title: "Book"
         url: /categories/book/
         category: "Book"
-      - title: "etc"
-        url: /categories/etc/
-        category: "Etc"
+      - title: "other"
+        url: /categories/other/
+        category: "other"
