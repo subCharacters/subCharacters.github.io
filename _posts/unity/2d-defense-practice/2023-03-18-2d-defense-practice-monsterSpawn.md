@@ -27,7 +27,7 @@ last_modified_at: 2023-03-19
 ### 스폰 에리어 작성
 ---
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice01.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice01.PNG)
 
 <span style="font-size:13pt">
 2D Object -> Sprites -> Square로 이미지를 만든다.<br/>
@@ -35,7 +35,7 @@ last_modified_at: 2023-03-19
 알기 쉽게 검은색으로 바꾸었다.<br/>
 </span>
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice02.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice02.PNG)
 
 <span style="font-size:13pt">
 그리고 Inspector창에서 Box Collider 2D를 추가한다.<br/>
@@ -103,7 +103,7 @@ public class SpawnController : MonoBehaviour
 SpawnArea의 Inspector창에서 스폰 텀 설정과 자기자신을 인자로 설정한다.<br/>
 </span>
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice03.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice03.PNG)
 
 ### 충돌 설정
 ---
@@ -113,14 +113,14 @@ SpawnArea의 Inspector창에서 스폰 텀 설정과 자기자신을 인자로 �
 Inspector창에서 레이어를 추가하거나 설정한 후 아래와 같이 프로젝트 물리 설정 체크 된 곳을 잘보고 변경한다.<br/>
 </span>
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice04.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice04.PNG)
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice05.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice05.PNG)
 
 ### 결과
 ---
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice06.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice06.PNG)
 
 <span style="font-size:13pt">
 50여마리 정도 생성했는데 훌륭하게 잘 돌아간다.<br/>

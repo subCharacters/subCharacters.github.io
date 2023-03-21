@@ -32,7 +32,7 @@ last_modified_at: 2023-03-19
 네모나게 만들고 흰색으로 만들었다.<br/>
 </span>
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice07.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice07.PNG)
 
 <span style="font-size:13pt">
 이런 식으로 적당히 만들어 둔다.<br/>
@@ -74,13 +74,13 @@ public class MonsterController : MonoBehaviour
 isWalk가 참이면 idle에서 walk모션이 나오도록 되어 있다.<br/>    
 </span>
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice08.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice08.PNG)
 
 <span style="font-size:13pt">
 그리고 walk모션은 loop설정 해두었다.<br/>    
 </span>
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice10.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice10.PNG)
 
 ### 충돌 설정
 ---
@@ -88,14 +88,14 @@ isWalk가 참이면 idle에서 walk모션이 나오도록 되어 있다.<br/>
 이렇게하면 몬스터끼리 충돌이 일어나므로 같은 Monster레이어끼리는 무시하도록 설정해준다.<br/>
 </span>
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice04.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice04.PNG)
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice05.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice05.PNG)
 
 ### 결과
 ---
 
-![image](..\..\images\unity\2d-defense-practice\2d-defense-practice09.png)
+![image](..\..\images\unity\2d-defense-practice\2d-defense-practice09.PNG)
 
 <span style="font-size:13pt">
 매우 간단하게 끝이 났다.<br/>
