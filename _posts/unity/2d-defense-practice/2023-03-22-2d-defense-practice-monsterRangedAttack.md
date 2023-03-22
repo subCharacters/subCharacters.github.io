@@ -188,6 +188,7 @@ transform.eulerAngles = new Vector3(0, 0, angle)<br/>
 
 <span style="font-size:13pt">
 몬스터 쪽에 투사체 생성위치와 투사체 프리팹을 넣어준다.<br/>
+그리고 Fire함수는 근접 공격과 마찬가지로 애니메이션 이벤트로 넣어줬다.<br/>
 </span>
 
 ![image](..\..\images\unity\2d-defense-practice\2d-defense-practice19.PNG)
