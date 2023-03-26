@@ -234,7 +234,7 @@ public class RangedMonsterController : Monster
 ### <span style="color: #73a3fb;">TODO</span>
 ---
 <span style="font-size:13pt">
-몬스터 공격(원거리)<br/>
+몬스터 스크립트 정리<br/>
 </span>
 
 - [x] <span style="font-size:13pt">~~몬스터 스폰~~</span>
