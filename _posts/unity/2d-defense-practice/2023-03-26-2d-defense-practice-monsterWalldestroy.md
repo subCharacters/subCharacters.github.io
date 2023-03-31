@@ -11,8 +11,8 @@ tags:
   - defense
 toc: true
 toc_sticky: true
-date: 2023-03-25
-last_modified_at: 2023-03-25
+date: 2023-03-26
+last_modified_at: 2023-03-29
 ---
 
 ### 개요
@@ -61,6 +61,17 @@ abstract public class Monster : MonoBehaviour
 {
     ....중략
 
+    protected void Start()
+    {
+        animator = GetComponent<Animator>();
+        if (GameObject.FindGameObjectWithTag("Wall") != null)
+        {
+            wall = GameObject.FindGameObjectWithTag("Wall").transform;
+        }
+    }
+
+    ....중략
+
     protected bool IsWalk()
     {
         if (wall != null)
@@ -102,6 +113,38 @@ public class MeleeMonsterController : Monster
                 Debug.Log("Hit");
             }
         }
+    }
+}
+```
+
+### RangedMonsterController, Arrow스크립트수정
+
+<span style="font-size:13pt">
+Arrow에 데미지를 추가하고 몬스터 컨트롤러에서 생성된 오브젝트에서 데미지를 넘겨서 데미지를 세팅해줌.<br/>
+</span>
+
+```c#
+public class RangedMonsterController : Monster
+{
+    ... 중략
+
+    public void RangedAttack()
+    {
+        GameObject t_arrow = Instantiate(arrow, new Vector2(frontItem.transform.position.x, frontItem.transform.position.y), frontItem.transform.rotation);
+        t_arrow.GetComponent<Arrow>().SetDamage(attackDamage);
+    }
+}
+```
+```c#
+public class Arrow : MonoBehaviour
+{
+    private int arrowDamage;
+
+    ... 중략
+
+    public void SetDamage(int damage)
+    {
+        this.arrowDamage = damage;
     }
 }
 ```
