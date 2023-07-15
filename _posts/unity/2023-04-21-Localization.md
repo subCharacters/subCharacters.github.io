@@ -77,7 +77,7 @@ Specific Locale Selector를 수정하여 국가별 언어를 설정 가능하게
 Locale Generator를 선택하면 창이 하나가 뜨는데 여기에서 대응할 언어들을 선택해주면 된다.<br/>
 언어들이 많으니 검색 창에서도 선택이 가능하다.<br/>
 선택 후 Generate Locales를 선택하면 저장할 곳을 선택하라는 창이 뜨는데 위와 동일한 Locale폴더에 넣어주었다.<br/>
-그리고 Specitic Locale Selector를 하나 씩 추가해준다.<br/>
+그리고 Specific Locale Selector를 하나 씩 추가해준다.<br/>
 </span>
 
 ![image](..\..\images\unity\localization\localization06.PNG)
@@ -85,7 +85,7 @@ Locale Generator를 선택하면 창이 하나가 뜨는데 여기에서 대응�
 ![image](..\..\images\unity\localization\localization07.PNG)
 
 <span style="font-size:13pt">
-정상적으로 추가가 되었으면 Inspector창에서 +를 눌러 Specitic Locale Selector를 하나 씩 추가해준다.<br/>
+정상적으로 추가가 되었으면 Inspector창에서 +를 눌러 Specific Locale Selector를 하나 씩 추가해준다.<br/>
 아래에 있는 Project Locale Identifier에서 기본으로 사용할 언어를 선택 할 수 있다.<br/>
 </span>
 
