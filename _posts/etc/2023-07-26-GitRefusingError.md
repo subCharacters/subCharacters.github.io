@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Google Oauth2 등록"
+title: "git pull origin matser에러"
 author_profile: true
 sidebar:
   nav: "docs"
