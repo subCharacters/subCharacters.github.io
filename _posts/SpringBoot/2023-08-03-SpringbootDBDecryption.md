@@ -8,7 +8,7 @@ categories:
   - SpringBoot
 tags:
   - SpringBoot
-  - LogBack
+  - DB
 toc: true
 toc_sticky: true
 date: 2023-08-03
