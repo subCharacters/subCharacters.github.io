@@ -6,6 +6,8 @@ sidebar:
   nav: "docs"
 categories:
   - Git
+tags:
+  - Branch
 toc: true
 toc_sticky: true
 date: 2024-01-08
