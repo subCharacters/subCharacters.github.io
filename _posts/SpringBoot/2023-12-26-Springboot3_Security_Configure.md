@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "SpringBoot3 Security"
+title: "SpringBoot3 Security2"
 author_profile: true
 sidebar:
   nav: "docs"
