@@ -10,45 +10,61 @@ main:
     url: /tags/
 
 docs:
-  - title: Server
+  - title: 자바&코틀린
     children:
-      - title: "Java"
-        url: /categories/java/
-        category: "Java"
+      # - title: "Java"
+      #   url: /categories/java/
+      #   category: "Java"
       - title: "Kotlin"
         url: /categories/kotlin/
         category: "Kotlin"
+  - title: 스프링
+    children:
       - title: "SpringBoot"
         url: /categories/springboot/
         category: "SpringBoot"
-      - title: "Network"
-        url: /categories/network/
-        category: "Network"
-  - title: Client
+      - title: "SpringSecurity"
+        url: /categories/springsecurity/
+        category: "SpringSecurity"
+  - title: 유니티
     children:
-      - title: "JavaScript"
-        url: /categories/javascript/
-        category: "JavaScript"
-      - title: "TypeScript"
-        url: /categories/typescript/
-        category: "TypeScript"
-      - title: "React"
-        url: /categories/react/
-        category: "React"
+      # - title: "JavaScript"
+      #   url: /categories/javascript/
+      #   category: "JavaScript"
+      # - title: "TypeScript"
+      #   url: /categories/typescript/
+      #   category: "TypeScript"
+      # - title: "React"
+      #   url: /categories/react/
+      #   category: "React"
       - title: "Unity"
         url: /categories/unity/
         category: "Unity"
+  - title: 플러터
+    children:
+      # - title: "JavaScript"
+      #   url: /categories/javascript/
+      #   category: "JavaScript"
+      # - title: "TypeScript"
+      #   url: /categories/typescript/
+      #   category: "TypeScript"
+      # - title: "React"
+      #   url: /categories/react/
+      #   category: "React"
+      - title: "Flutter"
+        url: /categories/flutter/
+        category: "Flutter"
   - title: Etc
     children:
       - title: "Git"
         url: /categories/git/
         category: "Git"
-      - title: "Algorithm"
-        url: /categories/algorithm/
-        category: "Algorithm"
-      - title: "Book"
-        url: /categories/book/
-        category: "Book"
+      # - title: "Algorithm"
+      #   url: /categories/algorithm/
+      #   category: "Algorithm"
+      # - title: "Book"
+      #   url: /categories/book/
+      #   category: "Book"
       - title: "other"
         url: /categories/other/
         category: "other"
