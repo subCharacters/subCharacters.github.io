@@ -57,6 +57,11 @@ docs:
       - title: "Flutter 클론코딩"
         url: /categories/Flutter_clone_netflix/
         category: "Flutter_clone_netflix"
+  - title: Linux
+    children:
+      - title: "Command"
+        url: /categories/command/
+        category: "Command"
   - title: Etc
     children:
       - title: "Git"
