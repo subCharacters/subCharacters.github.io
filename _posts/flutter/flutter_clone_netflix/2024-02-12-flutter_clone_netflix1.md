@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Flutter netflix클론코딩"
+title: "Flutter netflix클론코딩1"
 author_profile: true
 sidebar:
   nav: "docs"
