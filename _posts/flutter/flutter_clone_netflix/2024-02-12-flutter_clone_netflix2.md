@@ -17,7 +17,7 @@ last_modified_at: 2024-03-04
 # 넷플릭스 클론 코딩
 ---
 
-넷플릭스의 4가지 탭 중 첫번재인 홈 탭을 구성
+넷플릭스의 4가지 탭 중 첫번째인 홈 탭을 구성
 
 ## 홈 화면 제작
 ---
@@ -49,7 +49,7 @@ last_modified_at: 2024-03-04
   # https://flutter.dev/assets-and-images/#from-packages
 ```
 
-3. 생성한 home_screen.dart 파일에 코드를 작성
+5. 생성한 home_screen.dart 파일에 코드를 작성
 
  ```dart
 import 'package:flutter/material.dart';
