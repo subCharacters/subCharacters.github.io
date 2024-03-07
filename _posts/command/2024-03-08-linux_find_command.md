@@ -41,5 +41,5 @@ find [OPTION...] [PATH] [EXPRESSION...]
 ```bash
 find example.txt
 find ./ -maxdepth 1 -type f -newermt 2024-02-27 ! -newermt 2024-03-08 -name "*.txt"
-
+find /path/to/search -type f -newermt "$(date -d '30 days ago' +'%Y-%m-%d')" -exec ls -l {} +
 ```
