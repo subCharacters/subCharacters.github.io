@@ -23,9 +23,15 @@ docs:
       - title: "SpringBoot"
         url: /categories/springboot/
         category: "SpringBoot"
+      - title: "SpringBatch"
+        url: /categories/springbatch/
+        category: "SpringBatch"
       - title: "SpringSecurity"
         url: /categories/springsecurity/
         category: "SpringSecurity"
+      - title: "SpringError"
+        url: /categories/springerror/
+        category: "SpringError"
   - title: 유니티
     children:
       # - title: "JavaScript"
