@@ -60,8 +60,8 @@ public class TaskletJob {
 
 ## 해결
 인텔리제이 설정에서 해당 에러를 표시 안되도록 하거나 그냥 무시한다.  
-혹은 컴포넌트를 찾을 수 있도록 지정 해주면 된다.  
-설정에서 바꿀시 적용이 안되기도 하고 실제로 없는데 표시를 안해서 에러를 못잡는 상황이 있을 수 있으므로 ComponentScan어노테이션으로 해결했다.
+
+### 1.ComponentScan어노테이션추가
 
 ```java
 @Slf4j
@@ -78,9 +78,21 @@ public class TaskletJob {
 }
 ```
 
-## 결과
+### 2.idea.properties수정
 
-![이미지](../../images/springerror/springbatch/springerror_batch_00.PNG)
+Help -> Edit Custom Properties
+
+```properties
+idea.spring.boot.filter.autoconfig=false
+```
+
+### 3.Inspections설정 변경
+
+File -> Settings -> Inspections  
+Spring Core -> Code -> Incorrect autowiring in Spring bean components의 설정을 변경  
+
+![Image](../../../images/springerror/springbatch/springerror_batch_00.PNG)
+
 
 ## 참고자료
 
