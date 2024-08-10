@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
   nav: "docs"
 categories: 
-  - SpringError
+  - SpringBatch
 tags:
   - SpringBoot
   - SpringBatch
@@ -34,6 +34,9 @@ last_modified_at: 2024-08-04
 ## 아키텍처
 
 기본적인 구성은 아래와 같다.  
+
+![image](../../images/springbatch/springbatch03.png)
+
 
 ![image](../../images/springbatch/springbatch00.png)
 >https://docs.spring.io/spring-batch/docs/3.0.10.RELEASE/reference/htmlsingle/

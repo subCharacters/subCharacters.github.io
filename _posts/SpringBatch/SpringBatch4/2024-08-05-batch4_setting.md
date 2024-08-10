@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
   nav: "docs"
 categories: 
-  - SpringError
+  - SpringBatch
 tags:
   - SpringBoot
   - SpringBatch4
@@ -200,6 +200,9 @@ public class TaskletJob {
 ```
 
 ### 결과
+
+실행을 할 때 Run/Debug Configuration 설정에서 Program aruments의 값을 추가 해주자.
+> --job.name=Job의 이름
 
 ![image](../../../images/springbatch/springbatch4/springbatch4_05.PNG)
 ![image](../../../images/springbatch/springbatch4/springbatch4_06.PNG)
