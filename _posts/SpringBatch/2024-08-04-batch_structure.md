@@ -29,7 +29,24 @@ last_modified_at: 2024-08-04
 
 ## 개요
 
-대규모 데이터를 일괄 처리하는 배치 작업을 구현하기 쉽게 도와주는 스프링 기반의 프레임워크이다.
+SpringSource(Pivotal)과 Accenture가 합작해서 만든 대규모 데이터를 일괄 처리하는 배치 작업을 구현하기 쉽게 도와주는 스프링 기반의 프레임워크이다.
+
+### 핵심 패턴
+
+* Read - 데이터베이스, 파일, 큐에서 다량의 데이터를 조회
+* Process - 특정 방법으로 데이터를 가공
+* Write - 데이터를 수정된 양식으로 저장
+
+ETL과 비슷한 처리를 함.
+
+### 핵심 시나리오
+
+* 배치 프로세스를 주기적으로 커밋
+* 동시 다발적인 Job의 배치 처리, 대용량 병렬처리(멀티 스레드)
+* 실패 후 수동 또는 스케쥴링에 의한 재시작
+* 의존 관계가 있는 step 여러 개를 순차적으로 처리
+* 조건적 Flow 구성을 통한 체계적이고 유연한 배치 모델 구성
+* 반복, 재시도, skip 처리
 
 ## 아키텍처
 
@@ -98,3 +115,4 @@ SEQ는 시퀀스 생성관련 테이블임.
 
 [Spring Batch - Reference Documentation](https://docs.spring.io/spring-batch/docs/3.0.10.RELEASE/reference/htmlsingle/)  
 [terasoluna-batch](https://terasoluna-batch.github.io/guideline/5.0.0.RELEASE/en/Ch02_SpringBatchArchitecture.html)  
+[인프런 - 스프링배치](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B0%B0%EC%B9%98/dashboard)
