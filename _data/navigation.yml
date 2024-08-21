@@ -75,9 +75,9 @@ docs:
         category: "Oracle"
   - title: Design
     children:
-      - title: "Design"
-        url: /categories/design/
-        category: "Design"
+      - title: "DesignPatterns"
+        url: /categories/design-patterns/
+        category: "DesignPatterns"
   - title: Etc
     children:
       - title: "Git"
