@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "SpringBoot Scope Bean에 대해 - singleton, prototype, request"
+title: "SpringBoot Bean Scope에 대해 - singleton, prototype, request"
 author_profile: true
 sidebar:
   nav: "docs"
@@ -286,13 +286,13 @@ beanService -> com.practice.springboot_practice_for_java.service.service.Request
 ```
 
 <span style="font-size:13pt">
-그때 그때의 리퀘스트마다 생성된 것을 볼 수 있다.<br>
+그때 그때 리퀘스트마다 생성된 것을 볼 수 있다.<br>
 </span>
 
 ## 마무리
 <span style="font-size:13pt">
 싱글톤으로 관리 되기 때문에 전역 변수를 함부로 수정하는 것은 매우 리스크가 있기에 설계 단계에서 잘 생각 해야 한다.<br>
 그렇다고 무작정 많이 만들면 메모리, 성능 이슈로 이어질 수 있기 때문에 이것도 고려해야한다.<br>
-마지막으로 프로토타입은 웹에서는 인스턴스 생성 타이밍이 기동 시 이기 때문에 생성 타이밍도 고려해야한다.<br>
+마지막으로 프로토타입은 웹에서는 인스턴스 생성 타이밍이 기동 시 이기때문에 생성 타이밍도 고려해야한다.<br>
 </span>
 
