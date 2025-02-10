@@ -45,16 +45,14 @@ SpringBatch의 Step의 startLimit() 와 allowStartIfComplete() 대해 간단히 
 * 기본적으로 COMPLETE 상태를 가진 step은 job 재시작 시 스킵된다.
 * true로 설정할 경우 항상 실행한다.
 
-### 3.코드  
+### 3.예제코드  
 
 ```java
 @Configuration
 public class StartlimitAllowStartIfCompleteStep {
 
     @Bean
-    public Job startlimitAllowStartIfCompleteStepJob(JobRepository jobRepository,
-                                                     Step allowStartIfCompleteStepStep,
-                                                     Step startlimitStepStep) {
+    public Job startlimitAllowStartIfCompleteStepJob(JobRepository jobRepository, Step allowStartIfCompleteStepStep, StepstartlimitStepStep) {
         return new JobBuilder("StartlimitAllowStartIfCompleteStepJob", jobRepository)
                 .start(allowStartIfCompleteStepStep)
                 .start(startlimitStepStep)
