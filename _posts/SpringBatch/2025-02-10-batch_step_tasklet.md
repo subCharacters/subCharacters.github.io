@@ -26,9 +26,9 @@ last_modified_at: 2025-02-10
 
 <span style="font-size:13pt">
 SpringBatch의 Step의 Tasklet에 대해 간단히 정리한다.<br>
-개념적으론 batch4버전과 5버전 동일하나 Tasklet을 선언할때 Step에서 바로 익명클래스나 람다식 등으로 선언하는 것이 Deprecated로 바뀌었다.<br>
-따로 클래스를 만들어서 커스텀 하거나 메소드를 따로 정의하여야한다.<br>
-메소드에서 따로 만들면 익명클래스나 람다로 생선하는건 가능하다.
+개념적으론 batch4버전과 5버전 동일하나 Tasklet을 선언할때 Step에서 바로 익명클래스나 람다식 등으로만 선언하는 것이 Deprecated로 바뀌었다.<br>
+Tasklet과 함께 PlatformTransactionManager도 같이 넘겨줘야한다.<br>
+메소드에서 따로 만들면 익명클래스나 람다로 생성하는건 것도 가능하다.
 </span>
 
 ### 1.기본개념
@@ -61,6 +61,11 @@ public class TaskletStep {
                 .tasklet(taskletStepTasklet(), transactionManager)
                 .tasklet(taskletStepTaskletLambda, transactionManager)
                 .tasklet(new CustomTasklet(), transactionManager)
+                // batch4와 같이 바로 선언도 가능한다. 단, transactionManager가 필요하다.
+                /*.tasklet(((contribution, chunkContext) -> {
+                    contribution.setExitStatus(ExitStatus.FAILED);
+                    return RepeatStatus.FINISHED;
+                }), transactionManager)*/ 
                 .build();
     }
 
