@@ -19,7 +19,7 @@ last_modified_at: 2025-02-15
 ## 목표
 
 ```
-스프링 배치의 FlowJob의 start()와 next()에 대해   안다.
+스프링 배치의 FlowJob의 start()와 next()에 대해 안다.
 ```
 
 ## 개요
