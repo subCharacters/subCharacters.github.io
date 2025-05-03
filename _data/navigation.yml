@@ -92,3 +92,6 @@ docs:
       - title: "other"
         url: /categories/other/
         category: "other"
+  - title: Search
+    url: /search/
+    icon: search

@@ -1,0 +1,59 @@
+---
+layout: single
+title: "검색"
+permalink: /search/
+author_profile: true
+sidebar:
+  nav: "docs"
+toc: true
+---
+
+<div class="page-content">
+  <h1>블로그 검색</h1>
+  <input type="search" id="search-input" placeholder="검색어를 입력하세요…" autofocus class="search-box" />
+  <ul id="search-results" class="search-results"></ul>
+</div>
+
+<!-- Fuse.js CDN -->
+<script src="https://unpkg.com/fuse.js@6.6.2"></script>
+<script>
+  let fuse, docs = [];
+
+  // 1) JSON 로드
+  fetch('{{ "/search.json" | relative_url }}')
+    .then(r => r.json())
+    .then(data => {
+      docs = data;
+      // 2) Fuse 인덱스 생성
+      fuse = new Fuse(docs, {
+        keys: ["title", "content", "categories", "tags"],
+        threshold: 0.3,          // 민감도 조절 (0~1, 낮을수록 정확도↑)
+        ignoreLocation: true,    // 검색어 위치 무시
+      });
+    });
+
+  // 3) 입력 이벤트 바인딩
+  document.getElementById('search-input').addEventListener('input', e => {
+    const q = e.target.value.trim();
+    const $ul = document.getElementById('search-results');
+    if (!q) {
+      $ul.innerHTML = '';
+      return;
+    }
+
+    // Fuse.js 검색 → FuseResult[] 반환
+    const results = fuse.search(q).map(r => r.item);
+
+    // 결과 렌더링
+    if (results.length) {
+      $ul.innerHTML = results.map(doc => `
+        <li>
+          <a href="${doc.url}">${doc.title}</a>
+          <p class="snippet">${doc.content.slice(0,100)}…</p>
+        </li>
+      `).join('');
+    } else {
+      $ul.innerHTML = '<li>검색 결과가 없습니다.</li>';
+    }
+  });
+</script>
