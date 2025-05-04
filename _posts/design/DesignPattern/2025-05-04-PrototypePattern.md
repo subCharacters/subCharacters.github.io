@@ -88,7 +88,7 @@ public class SoldierPrototype {
 #### Main class
 ```java
 public class Main {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         Soldier template = new Soldier("Template", 10, "Spear");
         SoldierPrototype prototype = new SoldierPrototype(template);
 
