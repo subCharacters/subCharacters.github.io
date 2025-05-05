@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "디자인패턴 - Template"
+title: "디자인패턴 - TemplateMethod"
 author_profile: true
 sidebar:
   nav: "docs"
 categories: 
   - DesignPatterns
 tags:
-  - Template
+  - TemplateMethod
 toc: true
 toc_sticky: true
 date: 2024-08-28

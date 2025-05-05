@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "디자인패턴 - Momento"
+title: "디자인패턴 - Memento"
 author_profile: true
 sidebar:
   nav: "docs"
 categories: 
   - DesignPatterns
 tags:
-  - Momento
+  - Memento
 toc: true
 toc_sticky: true
 date: 2025-05-05
@@ -166,5 +166,5 @@ public class Main {
 ```
 
 ## 마무리
-커맨드 패턴과 비슷하지만 모멘트 패턴은 객체의 상태를 저장하고 커맨드 패턴은 행위를 저장한다는 게 다르다.  
-모멘트는 게임에서 세이브라고 보면 되고 커맨드 패턴은 undo라고 생각하면 될 거 같다.
+커맨드 패턴과 비슷하지만 모멘토 패턴은 객체의 상태를 저장하고 커맨드 패턴은 행위를 저장한다는 게 다르다.  
+모멘토는 게임에서 세이브라고 보면 되고 커맨드 패턴은 undo라고 생각하면 될 거 같다.
